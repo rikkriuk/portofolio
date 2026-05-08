@@ -1,9 +1,13 @@
-export default function App() {
+import AppNavbar from "./layouts/AppNavbar";
+import HomePage from "./screens/home"
+
+const App = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-zinc-900">
-      <h1 className="text-5xl font-bold text-cyan-400">
-        React + TS + Tailwind v4
-      </h1>
-    </div>
+    <main className="bg-[#E6E2DF]">
+      <AppNavbar />
+      <HomePage />
+    </main>
   )
 }
+
+export default App;
