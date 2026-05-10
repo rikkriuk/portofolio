@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 
 const HeroSection = () => {
    return (
-      <section className="relative flex justify-between items-center md:gap-10 min-h-[92vh] flex-col-reverse px-8 lg:px-24 lg:flex-row xl:px-48">
+      <section className="relative flex justify-between items-center md:gap-10 min-h-[92vh] flex-col-reverse lg:flex-row">
          <div className="space-y-7 flex-1">
             <Badge
                label="HELLO WORLD!"
