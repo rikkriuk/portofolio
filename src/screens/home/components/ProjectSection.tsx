@@ -118,7 +118,7 @@ const ProjectSection = () => {
    const _renderProjectRow = (row, rowIndex) => (
       <div
          key={rowIndex}
-         className={`grid grid-cols-1 ${row.cols} h-auto ${row.height} gap-8`}
+         className={`bg-[#FFFFFF] grid grid-cols-1 ${row.cols} h-auto ${row.height} gap-8`}
       >
          {row.projects.map((project, projectIndex) =>
             _renderProjectCard(project, projectIndex)
@@ -127,7 +127,7 @@ const ProjectSection = () => {
    );
 
    return (
-      <section className="space-y-10 pb-96">
+      <section className="space-y-10">
 
          <div className="flex flex-col md:flex-row justify-between md:items-center gap-6">
             <h2 className="underline md:no-underline underline-offset-10 decoration-[6px] font-bold text-5xl text-primary">MY PROJECTS</h2>
