@@ -24,7 +24,7 @@ const AppNavbar = ({
 
    return (
       <header 
-         className={`overflow-hidden flex justify-between items-center h-[8vh] px-8 lg:px-24 xl:px-48 border-b-4 border-primary shadow-[6px_6px_0_0_rgba(28,27,26,1)]`}
+         className={`bg-[#FDF8F5] flex justify-between items-center h-[8vh] px-4 lg:px-24 xl:px-48 border-b-4 border-primary shadow-[6px_6px_0_0_rgba(28,27,26,1)]`}
       >
          <div>
             <h1 className="font-extrabold text-[32px]">PORTFOLIO_v1.0</h1>

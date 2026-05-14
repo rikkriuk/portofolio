@@ -1,26 +1,29 @@
 import { useState } from "react";
 import AppNavbar from "./layouts/AppNavbar";
 import HomePage from "./screens/home"
+import AppFooter from "./layouts/AppFooter";
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <main className="bg-[#FDF8F5] overflow-hidden">
+    <>
       <AppNavbar
         isSidebarOpen={isSidebarOpen}
         setIsSidebarOpen={setIsSidebarOpen}
       />
-
-      <div
+      
+      <main 
         className={`
-          px-8 lg:px-24 xl:px-48 space-y-16 transition-all duration-300 overflow-hidden
+          bg-[#FDF8F5] overflow-hidden px-4 lg:px-24 xl:px-48 space-y-16 transition-all duration-300
           ${isSidebarOpen ? "blur-sm pointer-events-none" : ""}
         `}
       >
         <HomePage />
-      </div>
-    </main>
+      </main>
+
+      <AppFooter />
+    </>
   )
 }
 
